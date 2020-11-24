@@ -18,6 +18,7 @@ public class GrossPayCalculator {
         double grossPay = hours * pay;
 
         // 4. Display the result
+        scanner.close();
         System.out.println("Your gross pay is calculated as: £" + grossPay);
     }
 }
