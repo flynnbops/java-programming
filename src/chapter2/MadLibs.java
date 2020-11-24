@@ -2,6 +2,12 @@ package chapter2;
 
 import java.util.Scanner;
 
+/*
+Generates a madlib
+Asking for; season, adjective and, number of coffees
+To Produce a madlib in
+"On a [ADJECTIVE] [SEASON] day, I drink a minimum of [CUPS] cups of coffee."
+ */
 public class MadLibs {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);

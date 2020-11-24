@@ -2,6 +2,10 @@ package chapter2;
 
 import java.util.Scanner;
 
+/*
+Calculates gross pay
+Asking for; number of hours, hourly rate
+ */
 public class GrossPayCalculator {
     public static void main(String[] args){
 
