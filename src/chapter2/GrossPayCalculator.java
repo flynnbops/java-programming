@@ -2,12 +2,15 @@ package chapter2;
 
 import java.util.Scanner;
 
+/**
+ * Simple program to calculate Gross pay
+ */
 public class GrossPayCalculator {
 
     public static void main(String[] args){
         // Setup scanner and variables
         Scanner scanner = new Scanner(System.in);
-        double hoursWorked, hourlyRate, grossPay;
+        double hoursWorked, hourlyRate;
 
         // Get hours worked
         System.out.println("Enter the numbers of hours worked");
@@ -19,10 +22,17 @@ public class GrossPayCalculator {
 
         scanner.close();
 
-        // Calculate gross pay
-        grossPay = hoursWorked*hourlyRate;
-
         // Return gross pay
-        System.out.println("The Gross pay is: £" + grossPay);
+        System.out.println("The Gross pay is: £" + grossPay(hoursWorked, hourlyRate));
+    }
+
+    /**
+     * Calculates gross pay.
+     * @param hoursWorked How many hours worked
+     * @param hourlyRate How much they get paid an hour
+     * @return Gross pay
+     */
+    public static double grossPay(double hoursWorked,double hourlyRate){
+        return hoursWorked*hourlyRate;
     }
 }
