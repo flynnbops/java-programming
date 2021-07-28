@@ -1,4 +1,4 @@
-package chapter3;
+package archive.chapter3;
 
 /*
 All salespeople get $1000 week
