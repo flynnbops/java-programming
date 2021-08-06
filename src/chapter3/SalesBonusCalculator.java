@@ -3,6 +3,7 @@ package chapter3;
 import java.util.Scanner;
 
 /**
+ * 3A
  * Program to calculate if a sales bonus should be awarded
  */
 public class SalesBonusCalculator {
