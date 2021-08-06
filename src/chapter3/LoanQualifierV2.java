@@ -24,6 +24,7 @@ public class LoanQualifierV2 {
 
         System.out.println("How many full years have you worked in your current job?");
         yearsEmployed = scanner.nextInt();
+        scanner.close();
 
         // Decision
         if (salary >= requiredSalary && yearsEmployed >= requiredYearsEmployed){
