@@ -27,7 +27,7 @@ public class PhoneBillCalculator {
         double total = planFee + overageCost + tax;
 
         // Return itemised bill
-        showBill( planFee,overageCost, tax, total);
+        showBill( planFee,overageCost, tax);
 
         scanner.close();
     }
@@ -50,11 +50,11 @@ public class PhoneBillCalculator {
         return Math.ceil(amount * taxRate);
     }
 
-    public static void showBill(double fee, double overage, double tax, double total){
+    public static void showBill(double fee, double overage, double tax){
         System.out.println("Phone bill statement");
-        System.out.println("Plan: £" + fee);
-        System.out.println("Overage: £" + overage);
-        System.out.println("Tax: £" + tax);
-        System.out.println("Total: £" + total);
+        System.out.println("Plan: £" + String.format("%.2f", fee));
+        System.out.println("Overage: £" + String.format("%.2f", overage));
+        System.out.println("Tax: £" + String.format("%.2f", tax));
+        System.out.println("Total: £" + String.format("%.2f", (fee + overage + tax)));
     }
 }
